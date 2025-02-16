@@ -207,6 +207,20 @@ section {
     transition: color 0.3s ease;
     position: relative;
   }
+  .homepage-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: stretch;
+    overflow-y: auto; /* Allow scrolling */
+  }
+
+  section {
+    min-height: 100vh; /* Ensure each section takes full viewport height */
+    width: 100%; /* Full width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* section:nth-child(odd) {
